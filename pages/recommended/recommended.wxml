@@ -1,0 +1,4 @@
+<view style="min-height:100%;height:100%;" wx:if="{{diypages}}">
+    <include src="/pages/diy/index.wxml" wx:if="{{diypages.page.type==2}}"></include>
+    <include src="/pages/custom/index.wxml" wx:if="{{diypages.page.type==20}}"></include>
+</view>
