@@ -137,7 +137,7 @@ App({
   },
   globalData: {
     appid: "wx67684529e331b39a",
-    api: "http://zyw.yp173.com/app/ewei_shopv2_api.php?i=1",
+    api: "https://zyw.yp173.com/app/ewei_shopv2_api.php?i=1",
     approot: "http://zyw.yp173.com/addons/ewei_shopv2/",
     userInfo: null
   }
