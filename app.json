@@ -37,6 +37,7 @@
     "pages/member/info/index",
     "pages/member/bind/index",
     "pages/member/favorite/index",
+    "pages/member/allowance/index",
     "pages/member/history/index",
     "pages/member/recharge/index",
     "pages/member/withdraw/index",
