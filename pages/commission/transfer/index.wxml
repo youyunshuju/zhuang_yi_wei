@@ -1,0 +1,16 @@
+<!--pages/commission/transfer/index.wxml-->
+
+<view class="transfer-head">
+    <view class="transfer-conter">NULL</view>
+</view>
+<view class="page-section">
+    <view class="weui-cells__title">实时获取输入值：{{inputValue}}</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input"  maxlength="10" bindinput="bindKeyInput" placeholder="输入同步到view中"/>
+      </view>
+    </view>
+  </view>
+<view>
+    <button>转给下级</button>
+</view>
