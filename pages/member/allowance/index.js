@@ -41,12 +41,30 @@ Page({
     var openids = this.data.openid;
     var money = this.data.money;
     var credit = this.data.credit;
+    if(wx.requestSubscribeMessage){
+      wx.requestSubscribeMessage({
+        tmplIds: ['cOm4GWNW8iPA1cDQWiJWwklAG5rNLSivEtoxxjH6v5I'],
+        success (res) { 
+          console.log(res)
+          console.log(11)
+        },
+        fail (){
+          console.log(22)
+        }
+      })
+    } 
+    
     wx.showModal({
       title: '提示',
       content: '确认转发抵用金',
       success(res) {
         if (res.confirm) {
           if (openids == '' || !money) {
+            wx.showToast({
+              title: '请完整填写信息',
+              icon:'none',
+              duration: 2000
+            })
             return false;
           }
           t.get("member/allowance/submit", {
@@ -56,9 +74,15 @@ Page({
           }, function(t) {
             wx.showToast({
               title: t.result.message,
+              icon:'none',
               duration: 2000
             })
           });
+          setTimeout(function(){
+            wx.navigateBack({
+              delta: 1,
+            })
+          },2000)
         } else if (res.cancel) {
           console.log('用户点击取消')
         }

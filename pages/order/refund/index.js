@@ -5,8 +5,8 @@ Page({
         code: 1,
         tempFilePaths: "",
         delete: "",
-        rtypeArr: [ "退款(仅退款不退货)", "退货退款", "换货" ],
-        rtypeArrText: [ "退款", "退款", "换货" ],
+        rtypeArr: [ "退款(仅退款不退货)", "退货退款","没收到货想退款","换货" ],
+        rtypeArrText: [ "退款", "退款","退款", "换货" ],
         rtypeIndex: 1,
         reasonArr: [ "不想要了", "卖家缺货", "拍错了/订单信息错误", "其它" ],
         reasonIndex: 0,
@@ -20,7 +20,7 @@ Page({
     get_list: function() {
         var t = this;
         e.get("order/refund", t.data.options, function(a) {
-            0 == a.error ? (a.order.status < 2 && (a.rtypeArr = [ "退款(仅退款不退货)" ]), a.show = !0, 
+            0 == a.error ? (a.order.status < 2 && (a.rtypeArr = [ "退款(仅退款不退货)","收到货了想退货","没收到货想退货","拍错商品类型" ]), a.show = !0, 
             t.setData(a)) : e.toast(a.message, "loading");
         });
     },

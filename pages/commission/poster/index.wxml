@@ -9,7 +9,7 @@
                     <view class="sk-child sk-bounce3"></view>
                 </view>
             </view>
-            <image catchtap="enlarge" class="check" src="{{check}}" wx:if="{{item.thumbLoaded}}"></image>
+            <image style="position" catchtap="previewImage" data-src="{{item.thumb}}" class="check" src="{{check}}" wx:if="{{item.thumbLoaded}}"></image>
         </view>
     </view>
     <view bindtap="pre" class="pre" wx:if="{{index>0}}">

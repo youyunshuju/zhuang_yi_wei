@@ -5,7 +5,9 @@
     -khtml-opacity: 0;
     opacity: 0;
 }
-
+.fui-cell-group{
+    margin-top: 80rpx;
+}
 .fui-cell-group.recharge {
     padding: 0 0;
 }
@@ -37,4 +39,10 @@
     color: #D9D9D9;
     transform-origin: 0 0;
     transform: scaleY(0.5);
+}
+.fui-cell-deal{
+    margin-top: 20rpx;
+    margin-right: 20rpx;
+    position:absolute;
+    right: 0rpx;
 }

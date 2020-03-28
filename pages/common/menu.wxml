@@ -8,7 +8,7 @@
         <text class="label">全部分类</text>
     </navigator>
     <navigator class="nav-item {{route!='cart'||'active'}}" hoverClass="none" openType="reLaunch" url="/pages/member/cart/index">
-        <view class="badge" wx:if="{{cartcount>0}}">{{cartcount}}</view>
+        <view  wx:if="{{cartcount>0}}">{{cartcount}}</view>
         <image class="icon" src="{{route=='cart'?icons.cart_red:icons.cart}}"></image>
         <text class="label">购物车</text>
     </navigator>

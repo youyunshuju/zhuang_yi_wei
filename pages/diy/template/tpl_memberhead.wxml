@@ -1,7 +1,7 @@
 <view style="overflow: hidden;height: 360rpx;position: relative;background: #fff" wx:if="{{diyitem.params.style=='default1'}}">
     <view class="member-head" style="z-index:100;border: none;">
         <view class="child">
-            <view class="title" style="color:{{diyitem.style.textcolor||''}}">余额</view>
+            <view class="title" style="color:{{diyitem.style.textcolor||''}}">抵用金</view>
             <view class="number" style="color:{{diyitem.style.textlight||''}}">{{member.credit2}}</view>
             <navigator class="btn" hoverClass="btn-hover" openType="navigate" style="color:{{diyitem.style.textcolor||''}};border-color:{{diyitem.style.textcolor||''}}" url="{{diyitem.params.leftnavlink}}" wx:if="{{member.open_recharge}}">{{diyitem.params.leftnav}}</navigator>
         </view>

@@ -1,7 +1,7 @@
 <div class="diymenu">
     <view>
         <div class="inner">
-            <span class="badge"></span>
+            <span ></span>
             <span class="icon"></span>
             <span class="text"></span>
             <image></image>

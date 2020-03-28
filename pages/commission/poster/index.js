@@ -164,5 +164,14 @@ Page({
         this.setData({
             full: !1
         }), this.getImage(this.data.index);
-    }
+    },
+     previewImage: function(e) {
+        var current = e.target.dataset.src;
+        
+        console.log(current)
+        wx.previewImage({
+         current: current,
+         urls:[current]
+        })
+     }
 });

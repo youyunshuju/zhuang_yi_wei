@@ -36,7 +36,7 @@
         <view class="fui-cell">
             <view class="fui-cell-text">{{!coupon.name?'请选择优惠券':'已选择优惠券：'+coupon.name}}</view>
             <view class="fui-cell-remark">
-                <div class="badge">{{coupon.count}}</div>
+                <div >{{coupon.count}}</div>
             </view>
         </view>
     </navigator>
