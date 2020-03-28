@@ -7,7 +7,7 @@
             <view class="th">类型</view>
             <view class="th">金额</view>
         </view>
-        <view class="tr" wx:for="{{list}}">
+        <view class="tr"  wx:for="{{list}}">
             <view class="td">{{item.nickname}}</view>
             <view class="td">{{item.createtime}}</view>
             <view class="td">{{item.remark}}</view>

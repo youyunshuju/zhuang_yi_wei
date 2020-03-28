@@ -20,7 +20,6 @@ Page({
   get_list: function() {
     var e = this;
     t.get("member/transaction", {}, function(t) {
-      console.log(t)
       e.setData(t);
     });
   }

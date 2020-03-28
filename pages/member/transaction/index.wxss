@@ -13,6 +13,7 @@
   .th,.td {
       padding: 10px;
       border-bottom: 1px solid #dadada;
+      /* width: 100%; */
       text-align: center;
       width:100%;
       overflow:hidden;
