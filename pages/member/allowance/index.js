@@ -41,15 +41,11 @@ Page({
     var openids = this.data.openid;
     var money = this.data.money;
     var credit = this.data.credit;
-    if(wx.requestSubscribeMessage){
+    if(!wx.requestSubscribeMessage){
       wx.requestSubscribeMessage({
         tmplIds: ['cOm4GWNW8iPA1cDQWiJWwklAG5rNLSivEtoxxjH6v5I'],
-        success (res) { 
-          console.log(res)
+        success () { 
           console.log(11)
-        },
-        fail (){
-          console.log(22)
         }
       })
     } 
