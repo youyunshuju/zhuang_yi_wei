@@ -36,11 +36,12 @@
             </view>
             <view class="fui-list-inner">
                 <view class="row">
-                    <view class="row-text">余额支付</view>
+                    <view class="row-text">抵用金支付</view>
                 </view>
-                <view class="subtitle">当前余额：<text class="text-danger">¥<text>{{list.credit.current}}</text>
+                <view class="subtitle">当前抵用金：<text class="text-danger">¥<text>{{list.credit.current}}</text>
                     </text>
                 </view>
+                <view class="subtitle">注意:抵用金支付将支付全额(即打折之前的价格)</view>
             </view>
             <view class="angle"></view>
         </view>
