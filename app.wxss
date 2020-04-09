@@ -579,8 +579,8 @@
 
 .fui-cell-group .fui-cell textarea {
     width: 100%;
-    height: auto;
-    min-height: 100rpx;
+    height: 50rpx;
+    overflow: auto;
     background: transparent;
     border: none;
     resize: none;

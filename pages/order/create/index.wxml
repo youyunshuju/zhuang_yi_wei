@@ -199,7 +199,7 @@
                 <view class="fui-cell-label">
           买家留言
         </view>
-                <view class="fui-cell-info">
+                <view class="fui-cell-info" style="overflow: auto;">
                     <textarea bindinput="dataChange" id="remark" placeholder="50字以内（选填）" rows="2" wx:if="{{!cycledate}}"></textarea>
                 </view>
             </view>

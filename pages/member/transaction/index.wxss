@@ -13,11 +13,12 @@
   .th,.td {
       padding: 10px;
       border-bottom: 1px solid #dadada;
-      /* width: 100%; */
       text-align: center;
       width:100%;
       overflow:hidden;
       text-overflow:ellipsis;
+      white-space:nowrap;
+      font-size:16rpx;
   }
   .th {
       font-weight: 400;
