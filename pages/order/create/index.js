@@ -249,7 +249,7 @@ Page({
                 e.setData({
                     submit: !1
                 }), 0 == t.error ? wx.navigateTo({
-                    url: "/pages/order/pay/index?id=" + t.orderid
+                    url: "/pages/order/pay/index?id=" + t.orderid + "&is_title=" + t.is_title
                 }) : a.alert(t.message);
             }, !0);
         }

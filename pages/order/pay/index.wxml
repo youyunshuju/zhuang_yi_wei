@@ -30,7 +30,7 @@
             </view>
             <view class="angle"></view>
         </view>
-        <view bindtap="pay" class="fui-list" data-type="credit" wx:if="{{list.credit.success&&list.order.price!=0}}">
+        <view bindtap="pay" class="fui-list" data-type="credit" wx:if="{{options.is_title != 1 && (list.credit.success&&list.order.price!=0)}}">
             <view class="fui-list-media">
                 <image class="round" src="/static/images/icon-white/ye.png"></image>
             </view>
