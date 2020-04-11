@@ -135,23 +135,25 @@
         </view>
         <navigator class="btn btn-danger block" openType="switchTab" url="/pages/index/index">继续去购物</navigator>
     </block>
-    <block wx:if="{{set['become']==4&&status==0&&member['isagent']==0}}">
+    <block wx:if="{{set['become']==4&&status==0&&member['isagent']==0}}" >
         <view class="fui-list-group">
             <view class="fui-list-group-title">
                 <image src="/static/images/icon/nolist.png"></image>
                 <text class="remind">友情提醒</text>
             </view>
-            <navigator url="/pages/goods/detail/index?id={{buy_goods['id']}}">
+            <view wx:for="{{all_goods}}">
+            <navigator url="/pages/goods/detail/index?id={{item['id']}}">
                 <view class="fui-list">
                     <view class="fui-list-media">
-                        <image src="{{buy_goods['thumb']}}"></image>
+                        <image src="{{item['img']}}"></image>
                     </view>
                     <view class="fui-list-inner">
-                        <view class="text">{{buy_goods['title']}}</view>
-                        <view class="text">{{buy_goods['marketprice']}}</view>
+                        <view class="text">{{item['title']}}</view>
+                        <view class="text">{{item['marketprice']}}</view>
                     </view>
                 </view>
             </navigator>
+            </view>
             <view class="fui-list">
                 <view class="fui-list-inner">
                     <view class="text">本店需购买此商品才可成为<text class="text-danger text-bold">{{shopname}}</text>购物中心{{set['texts']['agent']}}，请现在去购买吧！</view>

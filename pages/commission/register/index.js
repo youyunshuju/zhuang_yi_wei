@@ -9,6 +9,7 @@ Page({
     getData: function() {
         var e = this;
         t.get("commission/register", {}, function(t) {
+            console.log(t)
             70003 != t.error ? (t.show = !0, wx.setNavigationBarTitle({
                 title: "申请成为" + t.set.texts.agent || "申请"
             }), e.setData(t), e.setData({
